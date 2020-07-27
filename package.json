@@ -1,0 +1,38 @@
+{
+  "author": {
+    "name": "Alexandre Strzelewicz"
+  },
+  "bundleDependencies": false,
+  "config": {
+    "default-strategy": "broadcast"
+  },
+  "dependencies": {
+    "async": "latest",
+    "pm2": "github:Unitech/pm2#development",
+    "pmx": "latest",
+    "semver": "*"
+  },
+  "deprecated": false,
+  "description": "Basic system to broadcast message to all other processes",
+  "devDependencies": {
+    "better-assert": "^1.0.0",
+    "mocha": "2.x",
+    "should": "^7.0.0"
+  },
+  "keywords": [
+    "pubsub",
+    "intercomunication",
+    "microservice",
+    "service",
+    "zeromq",
+    "axon",
+    "pm2"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "pm2-intercom",
+  "scripts": {
+    "test": "DEBUG='*' mocha test/*.mocha.js"
+  },
+  "version": "1.0.0"
+}
