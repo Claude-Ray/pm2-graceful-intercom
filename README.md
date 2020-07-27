@@ -9,7 +9,7 @@ Simple inter process communication for processes managed by PM2.
 Require PM2 > 16.0.0.
 
 ```bash
-$ pm2 install pm2-intercom
+$ pm2 install pm2-graceful-intercom
 ```
 
 ## Emit a message
