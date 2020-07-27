@@ -8,12 +8,12 @@
   },
   "dependencies": {
     "async": "latest",
-    "pm2": "github:Unitech/pm2#development",
+    "pm2": "latest",
     "pmx": "latest",
     "semver": "*"
   },
   "deprecated": false,
-  "description": "Basic system to broadcast message to all other processes",
+  "description": "Yet another fork of pm2-intercom for graceful starting",
   "devDependencies": {
     "better-assert": "^1.0.0",
     "mocha": "2.x",
@@ -30,7 +30,11 @@
   ],
   "license": "MIT",
   "main": "index.js",
-  "name": "pm2-intercom",
+  "name": "pm2-graceful-intercom",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Claude-Ray/pm2-graceful-intercom.git"
+  },
   "scripts": {
     "test": "DEBUG='*' mocha test/*.mocha.js"
   },

@@ -1,3 +1,7 @@
+Yet another fork of pm2-intercom for [graceful starting](https://pm2.keymetrics.io/docs/usage/signals-clean-restart/#graceful-start).
+
+- Fix the **Error: ID, DATA or TOPIC field is missing** when using `process.send('ready')` with pm2-intercom
+- Avoid installing the pm2 dependency from git remote
 
 # Simple IPC for PM2
 
