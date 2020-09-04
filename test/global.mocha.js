@@ -15,16 +15,7 @@ describe('Global behavior checking', function() {
     });
   });
 
-  after(pm2.disconnect);
-
-  it('should launch pm2-intercom', function(done) {
-    pm2.start({
-      script : './index.js',
-      name : 'pm2-intercom'
-    }, function(err, app) {
-      done(err);
-    });
-  });
+  after(pm2.disconnect.bind(pm2));
 
   it('should launch emitter', function(done) {
     pm2.start({
@@ -37,6 +28,15 @@ describe('Global behavior checking', function() {
   it('should launch receiver', function(done) {
     pm2.start({
       script : './test/fixtures/receiver.js'
+    }, function(err, app) {
+      done(err);
+    });
+  });
+
+  it('should launch pm2-intercom', function(done) {
+    pm2.start({
+      script : './index.js',
+      name : 'pm2-intercom'
     }, function(err, app) {
       done(err);
     });

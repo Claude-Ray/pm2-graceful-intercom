@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/Claude-Ray/pm2-graceful-intercom.svg?branch=master)](https://travis-ci.org/Claude-Ray/pm2-graceful-intercom)
+
 Yet another fork of pm2-intercom for [graceful starting](https://pm2.keymetrics.io/docs/usage/signals-clean-restart/#graceful-start).
 
 - Fix the **Error: ID, DATA or TOPIC field is missing** when using `process.send('ready')` with pm2-intercom
